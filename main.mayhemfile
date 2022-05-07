@@ -1,0 +1,9 @@
+# Project name 
+project: eldiro
+
+# target name 
+target: main
+
+# target commands 
+cmds:
+  - cmd: /main

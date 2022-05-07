@@ -1,0 +1,101 @@
+cargo:rerun-if-changed=libfuzzer/FuzzerSHA1.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerUtilDarwin.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerDriver.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerLoop.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerUtil.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerIO.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerFork.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerInterceptors.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerMain.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerIOPosix.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerIOWindows.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerExtraCounters.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerMutate.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerCrossOver.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerUtilLinux.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerDataFlowTrace.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerExtFunctionsWindows.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerUtilWindows.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerExtFunctionsWeak.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerUtilPosix.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerTracePC.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerExtFunctionsDlsym.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerMerge.cpp
+cargo:rerun-if-changed=libfuzzer/FuzzerUtilFuchsia.cpp
+TARGET = Some("x86_64-unknown-linux-gnu")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-unknown-linux-gnu")
+CXX_x86_64-unknown-linux-gnu = None
+CXX_x86_64_unknown_linux_gnu = None
+HOST_CXX = None
+CXX = None
+CXXFLAGS_x86_64-unknown-linux-gnu = None
+CXXFLAGS_x86_64_unknown_linux_gnu = None
+HOST_CXXFLAGS = None
+CXXFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerSHA1.o" "-c" "libfuzzer/FuzzerSHA1.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerUtilDarwin.o" "-c" "libfuzzer/FuzzerUtilDarwin.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerDriver.o" "-c" "libfuzzer/FuzzerDriver.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerLoop.o" "-c" "libfuzzer/FuzzerLoop.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerUtil.o" "-c" "libfuzzer/FuzzerUtil.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerIO.o" "-c" "libfuzzer/FuzzerIO.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerFork.o" "-c" "libfuzzer/FuzzerFork.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerInterceptors.o" "-c" "libfuzzer/FuzzerInterceptors.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerMain.o" "-c" "libfuzzer/FuzzerMain.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerIOPosix.o" "-c" "libfuzzer/FuzzerIOPosix.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerIOWindows.o" "-c" "libfuzzer/FuzzerIOWindows.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerExtraCounters.o" "-c" "libfuzzer/FuzzerExtraCounters.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerMutate.o" "-c" "libfuzzer/FuzzerMutate.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerCrossOver.o" "-c" "libfuzzer/FuzzerCrossOver.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerUtilLinux.o" "-c" "libfuzzer/FuzzerUtilLinux.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerDataFlowTrace.o" "-c" "libfuzzer/FuzzerDataFlowTrace.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerExtFunctionsWindows.o" "-c" "libfuzzer/FuzzerExtFunctionsWindows.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerUtilWindows.o" "-c" "libfuzzer/FuzzerUtilWindows.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerExtFunctionsWeak.o" "-c" "libfuzzer/FuzzerExtFunctionsWeak.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerUtilPosix.o" "-c" "libfuzzer/FuzzerUtilPosix.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerTracePC.o" "-c" "libfuzzer/FuzzerTracePC.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerExtFunctionsDlsym.o" "-c" "libfuzzer/FuzzerExtFunctionsDlsym.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerMerge.o" "-c" "libfuzzer/FuzzerMerge.cpp"
+exit status: 0
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-std=c++11" "-fno-omit-frame-pointer" "-w" "-o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerUtilFuchsia.o" "-c" "libfuzzer/FuzzerUtilFuchsia.cpp"
+exit status: 0
+AR_x86_64-unknown-linux-gnu = None
+AR_x86_64_unknown_linux_gnu = None
+HOST_AR = None
+AR = None
+running: "ar" "cq" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer.a" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerSHA1.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerUtilDarwin.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerDriver.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerLoop.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerUtil.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerIO.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerFork.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerInterceptors.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerMain.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerIOPosix.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerIOWindows.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerExtraCounters.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerMutate.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerCrossOver.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerUtilLinux.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerDataFlowTrace.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerExtFunctionsWindows.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerUtilWindows.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerExtFunctionsWeak.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerUtilPosix.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerTracePC.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerExtFunctionsDlsym.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerMerge.o" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer/FuzzerUtilFuchsia.o"
+exit status: 0
+running: "ar" "s" "/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out/libfuzzer.a"
+exit status: 0
+cargo:rustc-link-lib=static=fuzzer
+cargo:rustc-link-search=native=/home/drjacobs/Desktop/eldiro/fuzz/target/debug/build/libfuzzer-sys-d2df73b9705ff943/out
+CXXSTDLIB_x86_64-unknown-linux-gnu = None
+CXXSTDLIB_x86_64_unknown_linux_gnu = None
+HOST_CXXSTDLIB = None
+CXXSTDLIB = None
+cargo:rustc-link-lib=stdc++
